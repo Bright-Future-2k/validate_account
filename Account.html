@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>account</title>
+</head>
+<body>
+<script>
+
+    function Account(str) {
+        let acc =/^[_a-z0-9]{6,}$/;
+        if (acc.test(str)){
+            return true;
+        }
+        return false;
+    }
+    console.log(Account('123abc'));
+    console.log(Account('1234_'));
+</script>
+</body>
+</html>
